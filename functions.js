@@ -1,12 +1,12 @@
 const addToZero = (arr) =>{
-    // let answer = false
+// let arr = [1,2,3,4,5]
+    let answer = false
     for (let i=0; i<arr.length; i++){
-        for (let j=0; j<arr.length; i++){
-            if(arr[i]+arr[j]===0){
-                return true
-            }
-        }
-    }
+    for (let j=0; j<arr.length; j++){
+        console.log(arr[i],arr[j])
+        if (arr[i]+arr[j] === 0){
+            return true}
+    }}
     return false
 }
-addToZero([1,2,3,4,5,-3])
+console.log(addToZero([1,-1]))
