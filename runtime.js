@@ -68,4 +68,7 @@ console.log("append", resultsAppend.preciseWords);
 // extraLargeArray in 773.891625ms ap 2.555375ms
 
 // insert paragraph here
+// both of the functions take longer with larger numbers.
+// the double insert function does not scale as well as the double append function.
+// you can clearly see this due to the fact the insert function starts off faster with the tiny array but progresses to take signifcantly longer by the time the extraLargeArray is used.
 
