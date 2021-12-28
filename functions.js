@@ -16,7 +16,7 @@ const hasUniqueChars = (string) =>{
 }
 // console.log(hasUniqueChars('neva'))
 
-// bonus because i thought q3 was for palindrome
+// bonus because i thought q3 said palindrome
 const isPalindrome = (string) => {
 let newString = string.replaceAll(' ','').split('').reverse().join('')
 if (string === newString){
@@ -47,5 +47,16 @@ const isPanagram = (string) =>{
  }
 return false
 }
-console.log(isPanagram('The quick brown fox jumps over the lazy dog!'))
+// console.log(isPanagram('The quick brown fox jumps over the lazy dog!'))
 
+const longestWord = (arr) => {
+    let answer = arr[0]
+    for(let i=1; i<arr.length; i++){
+        if(arr[i].length>answer.length){
+            answer = arr[i]
+        }
+    }
+    return answer.length
+}
+
+console.log(longestWord(['hi', 'hello']))
