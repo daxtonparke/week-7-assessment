@@ -7,6 +7,7 @@ const addToZero = (arr) =>{
     }}
     return false
 }
+// O(n^2)
 // console.log(addToZero([1,0]))
 
 const hasUniqueChars = (string) =>{
@@ -14,6 +15,7 @@ const hasUniqueChars = (string) =>{
     if(string === spreadString){return true}
     return false
 }
+// O(n)
 // console.log(hasUniqueChars('neva'))
 
 // bonus because i thought q3 said palindrome
@@ -24,6 +26,7 @@ if (string === newString){
 }
 return false
 }
+// O(n)
 // console.log(isPalindrome('hannah'))
 
 const isPanagram = (string) =>{
@@ -47,6 +50,7 @@ const isPanagram = (string) =>{
  }
 return false
 }
+// O(n)
 // console.log(isPanagram('The quick brown fox jumps over the lazy dog!'))
 
 const longestWord = (arr) => {
@@ -58,5 +62,5 @@ const longestWord = (arr) => {
     }
     return answer.length
 }
-
+// O(n)
 console.log(longestWord(['hi', 'hello']))
